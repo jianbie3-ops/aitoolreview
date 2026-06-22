@@ -1,0 +1,9 @@
+*.png
+*.jpg
+*.jpeg
+*.gif
+screenshot_*
+.github_token
+.github_device.json
+site.zip
+__pycache__
