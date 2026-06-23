@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>竞彩足球庄家视角分析</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'PingFang SC','Microsoft YaHei',sans-serif; background:#0a0a1a; color:#fff; display:flex; justify-content:center; padding:20px; }
+.card { max-width:800px; width:100%; background:linear-gradient(160deg,#0d0d2b 0%,#1a1040 100%); border-radius:20px; padding:30px; border:1px solid rgba(255,255,255,.08); }
+.header { text-align:center; margin-bottom:24px; }
+.header .badge { display:inline-block; background:rgba(239,68,68,.15); border:1px solid rgba(239,68,68,.3); color:#ef4444; padding:4px 14px; border-radius:20px; font-size:12px; margin-bottom:10px; }
+.header h1 { font-size:26px; font-weight:800; background:linear-gradient(135deg,#ef4444,#f97316); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+.header p { color:#8888bb; font-size:13px; margin-top:6px; }
+.match { background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08); border-radius:14px; padding:20px; margin-bottom:14px; }
+.mt { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
+.mt .name { font-size:16px; font-weight:700; }
+.mt .info { color:#8888bb; font-size:12px; }
+.grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-bottom:10px; }
+.odds-box { text-align:center; background:rgba(255,255,255,.04); border-radius:8px; padding:10px 6px; }
+.odds-box .lbl { font-size:11px; color:#8888bb; }
+.odds-box .val { font-size:18px; font-weight:700; }
+.odds-box .pct { font-size:11px; color:#667eea; }
+.odds-box.hot { background:rgba(16,185,129,.12); border:1px solid rgba(16,185,129,.3); }
+.odds-box.hot .val { color:#34d399; }
+.odds-box.cold { background:rgba(239,68,68,.10); border:1px solid rgba(239,68,68,.2); }
+.odds-box.cold .val { color:#ef4444; }
+.sub-row { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:10px; }
+.sub-box { display:flex; justify-content:space-between; background:rgba(255,255,255,.03); border-radius:8px; padding:8px 12px; font-size:12px; color:#aaa; }
+.sub-box .hl { color:#fbbf24; font-weight:600; }
+.view { font-size:12px; color:#888; padding:8px 12px; background:rgba(255,255,255,.03); border-radius:8px; border-left:3px solid #ef4444; }
+.view strong { color:#fbbf24; }
+.margin-badge { font-size:11px; padding:2px 8px; border-radius:10px; }
+.margin-low { background:rgba(16,185,129,.15); color:#34d399; }
+.margin-high { background:rgba(239,68,68,.15); color:#ef4444; }
+.footer { text-align:center; margin-top:20px; color:#555; font-size:11px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="header">
+    <div class="badge">🎯 庄家视角 · 外围赔率分析</div>
+    <h1>2026世界杯 竞彩足球深度分析</h1>
+    <p>基于欧赔、亚盘、大小球 · 剥离庄家抽水后的真实概率</p>
+  </div>
+
+  <!-- Match 1 -->
+  <div class="match">
+    <div class="mt"><span class="name">🇧🇪 比利时 vs 🇮🇷 伊朗</span><span class="info">03:00 · G组 <span class="margin-badge margin-low">抽水3.8%低</span></span></div>
+    <div class="grid3">
+      <div class="odds-box hot"><div class="lbl">主胜</div><div class="val">1.43</div><div class="pct">真实概率 67.4%</div></div>
+      <div class="odds-box"><div class="lbl">平局</div><div class="val">4.79</div><div class="pct">真实概率 20.1%</div></div>
+      <div class="odds-box"><div class="lbl">客胜</div><div class="val">7.70</div><div class="pct">真实概率 12.5%</div></div>
+    </div>
+    <div class="sub-row">
+      <div class="sub-box">亚盘 -1.3  <span class="hl">上盘48%</span> / <span>下盘52%</span></div>
+      <div class="sub-box">大小球 2.5  <span class="hl">大球53%</span> / <span>小球47%</span></div>
+    </div>
+    <div class="view"><strong>🎯 庄家看法：</strong>抽水仅3.8%，庄家对赛果最有把握。亚盘下盘概率略高(52%)，暗示比利时可能小胜。大小球大球53%，进球数可能≥3。<br><strong>💡 策略：</strong>比利时胜@1.43（稳健）或比利时胜+大球@2.5以上（高赔）</div>
+  </div>
+
+  <!-- Match 2 -->
+  <div class="match">
+    <div class="mt"><span class="name">🇺🇾 乌拉圭 vs 🇨🇻 佛得角</span><span class="info">06:00 · H组 <span class="margin-badge margin-high">抽水5.7%中</span></span></div>
+    <div class="grid3">
+      <div class="odds-box hot"><div class="lbl">主胜</div><div class="val">1.42</div><div class="pct">真实概率 66.6%</div></div>
+      <div class="odds-box"><div class="lbl">平局</div><div class="val">4.25</div><div class="pct">真实概率 22.3%</div></div>
+      <div class="odds-box cold"><div class="lbl">客胜</div><div class="val">8.50</div><div class="pct">真实概率 11.1%</div></div>
+    </div>
+    <div class="sub-row">
+      <div class="sub-box">亚盘 -1.5  <span class="hl">上盘39%</span> / <span>下盘61%</span></div>
+      <div class="sub-box">大小球 2.5  <span class="hl">大球45%</span> / <span>小球55%</span></div>
+    </div>
+    <div class="view"><strong>🎯 庄家看法：</strong>亚盘下盘概率高达61%！庄家认为乌拉圭赢不了1.5球。小球55%，可能是小比分。表面主胜概率高，但亚盘深藏冷意。<br><strong>💡 策略：</strong>保守选乌拉圭胜，或博下盘佛得角+1.5@1.55</div>
+  </div>
+
+  <!-- Match 3 -->
+  <div class="match">
+    <div class="mt"><span class="name">🇳🇿 新西兰 vs 🇪🇬 埃及</span><span class="info">09:00 · G组 <span class="margin-badge margin-high">抽水6.7%高</span></span></div>
+    <div class="grid3">
+      <div class="odds-box"><div class="lbl">主胜</div><div class="val">5.75</div><div class="pct">真实概率 16.3%</div></div>
+      <div class="odds-box"><div class="lbl">平局</div><div class="val">4.10</div><div class="pct">真实概率 22.9%</div></div>
+      <div class="odds-box hot"><div class="lbl">客胜</div><div class="val">1.54</div><div class="pct">真实概率 60.8%</div></div>
+    </div>
+    <div class="sub-row">
+      <div class="sub-box">亚盘 +0.5  <span class="hl">上盘41%</span> / <span>下盘59%</span></div>
+      <div class="sub-box">大小球 2.5  <span class="hl">大球46%</span> / <span>小球54%</span></div>
+    </div>
+    <div class="view"><strong>🎯 庄家看法：</strong>抽水6.7%最高，庄家在防范冷门。小球54%，埃及1-0主义。亚盘埃及-0.5只有59%，并非绝对信心。<br><strong>💡 策略：</strong>埃及胜@1.54，或埃及胜+小球@3.0以上</div>
+  </div>
+
+  <!-- Match 4 -->
+  <div class="match">
+    <div class="mt"><span class="name">🇦🇷 阿根廷 vs 🇦🇹 奥地利</span><span class="info">6/23 01:00 · J组 <span class="margin-badge margin-high">抽水7.1%高</span></span></div>
+    <div class="grid3">
+      <div class="odds-box hot"><div class="lbl">主胜</div><div class="val">1.56</div><div class="pct">真实概率 59.9%</div></div>
+      <div class="odds-box"><div class="lbl">平局</div><div class="val">3.80</div><div class="pct">真实概率 24.6%</div></div>
+      <div class="odds-box cold"><div class="lbl">客胜</div><div class="val">6.00</div><div class="pct">真实概率 15.6%</div></div>
+    </div>
+    <div class="sub-row">
+      <div class="sub-box">亚盘 -1.0  <span class="hl">上盘53%</span> / <span>下盘47%</span></div>
+      <div class="sub-box">大小球 2.5  <span class="hl">大球51%</span> / <span>小球49%</span></div>
+    </div>
+    <div class="view"><strong>🎯 庄家看法：</strong>抽水最高7.1%，庄家最没把握！亚盘上盘53% vs 下盘47%几乎五五开。大小球也接近平衡。庄家在诱主胜。<br><strong>💡 策略：</strong>谨慎！阿根廷胜赔率偏低，建议防平@3.80，或博下盘奥地利+1.0@2.05</div>
+  </div>
+
+  <div class="footer">
+    ⚠️ 数据仅供参考 · 理性购彩 · 请到体彩实体店购买 · 分析基于外围庄家赔率
+  </div>
+</div>
+</body>
+</html>
