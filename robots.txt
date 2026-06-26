@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jianbie3-ops.github.io/aitoolreview/sitemap.xml
